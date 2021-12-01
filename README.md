@@ -1,1 +1,1 @@
-# furniture-project
+# cuda-project
