@@ -6,6 +6,12 @@
 
 .container {}
 
+.text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 30px auto;
+}
 
 .btn {
   display: flex;
@@ -132,10 +138,6 @@
   &__heading {}
 
   &__text {
-    font-family: "Titillium Web", sans-serif;
-    font-size: 16px;
-    text-align: center;
-    margin: 30px auto;
     max-width: 600px;
   }
 
@@ -169,6 +171,78 @@
       font-size: 16px;
       font-weight: 100;
       line-height: 1.25;
+    }
+  }
+}
+
+.team {
+
+  background-color: #e7f1f8;
+  color: #3c4761;
+
+  &__heading {
+    margin: 0 0 20px 0;
+  }
+
+  &__text {
+    margin: 0 0 80px 0;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0 120px 0;
+  }
+
+  &__item {
+
+    display: flex;
+    flex-direction: column;
+    font-family: "Titillium Web", sans-serif;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    padding: 0 0 50px 0;
+    position: relative;
+
+    &_avatar {
+      // position: absolute;
+      // top: 0;
+      width: 200px;
+      height: 200px;
+      background-color: #878787;
+      border-radius: 50%;
+      margin: 0 0 40px 0;
+    }
+
+    &_name {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 10px 0;
+    }
+
+    &_position {
+      color: #30bae7;
+      margin: 0 0 30px 0;
+    }
+
+    &_text {
+      width: 200;
+      line-height: 1.5;
+      // margin: 0 0 30px 0;
+    }
+
+    &_socials {
+      position: absolute;
+      bottom: 0;
+
+      & a {
+        & img {
+          margin: 0 5px;
+        }
+      }
     }
   }
 }

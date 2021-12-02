@@ -84,6 +84,13 @@ h6 {
   font-weight: 400;
 }
 
+.text {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 30px auto;
+}
+
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,10 +236,6 @@ h6 {
 }
 
 .services__text {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 16px;
-  text-align: center;
-  margin: 30px auto;
   max-width: 600px;
 }
 
@@ -280,4 +283,80 @@ h6 {
   font-size: 16px;
   font-weight: 100;
   line-height: 1.25;
+}
+
+.team {
+  background-color: #e7f1f8;
+  color: #3c4761;
+}
+
+.team__heading {
+  margin: 0 0 20px 0;
+}
+
+.team__text {
+  margin: 0 0 80px 0;
+}
+
+.team__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 0 120px 0;
+}
+
+.team__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Titillium Web", sans-serif;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 250px;
+  padding: 0 0 50px 0;
+  position: relative;
+}
+
+.team__item_avatar {
+  width: 200px;
+  height: 200px;
+  background-color: #878787;
+  border-radius: 50%;
+  margin: 0 0 40px 0;
+}
+
+.team__item_name {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+}
+
+.team__item_position {
+  color: #30bae7;
+  margin: 0 0 30px 0;
+}
+
+.team__item_text {
+  width: 200;
+  line-height: 1.5;
+}
+
+.team__item_socials {
+  position: absolute;
+  bottom: 0;
+}
+
+.team__item_socials a img {
+  margin: 0 5px;
 }
