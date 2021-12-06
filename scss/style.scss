@@ -273,6 +273,33 @@
 
   &__progress {
     margin: 0 0 30px 0;
+
+    & svg {
+      &__donut {
+        &__segment {
+          // animation: 2s ease-in-out;
+          // animation: circle 120000ms linear 0s infinite normal forwards running;
+          animation: segment 2s ease-in-out;
+          // animation: name duration timing-function delay iteration-count direction fill-mode;
+        }
+
+        @keyframes segment {
+          from {
+            transform: rotateY(0deg);
+            // stroke-dasharray: 0 100;
+          }
+
+          to {
+            transform: rotateY(360deg);
+            // stroke-dasharray: 90 10;
+          }
+        }
+
+
+
+
+      }
+    }
   }
 
   &__name {

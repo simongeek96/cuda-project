@@ -1,6 +1,6 @@
 <svg width="200px" height="200px" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
   <circle class="donut-ring" cx="21" cy="21" r="15.91549430918952" stroke="#dfe8ed" stroke-width="3" opacity="0.5" fill="none" />
-  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918952" stroke="#eb7d4b" stroke-width="3" fill="none" stroke-dasharray="85 15" stroke-dashoffset="25"/>
+  <circle class="donut-segment" cx="21" cy="21" r="15.91549430918952" stroke-width="3" fill="none" />
   <g class="text">
     <text x="50%" y="50%" class="number">
       85
@@ -17,7 +17,7 @@
       padding: 0;
     }
 
-    .text {
+    g.text {
       font-size: 10px;
       font-family: "Titillium Web", sans-serif;
       font-weight: 200;
@@ -31,8 +31,20 @@
     }
 
     .donut-segment {
-      animation: 0.5s linear 0s infinite normal forwards running draw;
+      stroke-dasharray: 85 15;
+      stroke-dashoffset: 25;
+      stroke: #eb7d4b;
+      animation: segment 2s ease-in-out forwards;
     }
 
+  @keyframes segment {
+    from {
+      stroke-dasharray: 0 100;
+    }
+
+    to {
+      stroke-dasharray: 85 15;
+    }
+  }
   </style>
 </svg>

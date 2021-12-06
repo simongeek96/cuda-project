@@ -399,6 +399,33 @@ h6 {
   margin: 0 0 30px 0;
 }
 
+.skills__progress svg__donut__segment {
+  -webkit-animation: segment 2s ease-in-out;
+          animation: segment 2s ease-in-out;
+}
+
+@-webkit-keyframes segment {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes segment {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
 .skills__name {
   text-transform: uppercase;
   font-size: 20px;
