@@ -84,13 +84,6 @@ h6 {
   font-weight: 400;
 }
 
-.text {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 16px;
-  text-align: center;
-  margin: 30px auto;
-}
-
 .btn {
   display: -webkit-box;
   display: -ms-flexbox;
