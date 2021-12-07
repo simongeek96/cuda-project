@@ -34,7 +34,7 @@
       stroke-dasharray: 85 15;
       stroke-dashoffset: 25;
       stroke: #eb7d4b;
-      animation: segment 2s ease-in-out forwards;
+      animation: segment 2s ease-in-out forwards 5s;
     }
 
   @keyframes segment {

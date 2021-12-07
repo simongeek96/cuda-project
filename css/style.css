@@ -124,7 +124,7 @@ h6 {
   font-weight: 600;
   text-align: center;
   position: relative;
-  padding: 120px 0 30px 0;
+  padding: 60px 0 30px 0;
 }
 
 .heading::after {
@@ -140,7 +140,7 @@ h6 {
 
 .home {
   background-color: #87509c;
-  min-height: 600px;
+  padding: 0 170px 150px;
 }
 
 .home__header {
@@ -430,4 +430,100 @@ h6 {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 600;
+}
+
+.portfolio {
+  background-color: #ffdd99;
+  font-family: "Titillium Web", sans-serif;
+  color: #393939;
+  padding: 0 170px 110px;
+}
+
+.portfolio__text {
+  width: 520px;
+}
+
+.portfolio__nav {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 60px 0;
+}
+
+.portfolio__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio__nav ul li {
+  padding: 0 5px;
+}
+
+.portfolio__nav ul li a {
+  padding: 0 15px;
+  text-decoration: none;
+  height: 35px;
+  width: 75px;
+  text-transform: uppercase;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  color: #393939;
+  background-color: #ebc985;
+  border-radius: 5px;
+  -webkit-transition: background-color, ease-in-out 0.3s;
+  transition: background-color, ease-in-out 0.3s;
+}
+
+.portfolio__nav ul li a:hover {
+  background-color: #fff;
+}
+
+.portfolio__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.portfolio__item {
+  margin: 0 10px;
+}
+
+.portfolio__name {
+  text-align: center;
+  margin: 30px 0 60px 0;
+  text-transform: uppercase;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+.portfolio__btn {
+  top: 0;
+  color: #fff;
+  background-color: #17c2a4;
+  -webkit-box-shadow: 0 5px 0 #14a58c;
+          box-shadow: 0 5px 0 #14a58c;
+  -webkit-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio__btn:hover {
+  top: 2px;
+  -webkit-box-shadow: 0 3px 0 #118d78;
+          box-shadow: 0 3px 0 #118d78;
+  background-color: #16aa8f;
 }
