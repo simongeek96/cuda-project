@@ -41,6 +41,7 @@
   text-align: center;
   position: relative;
   padding: 60px 0 30px 0;
+  letter-spacing: 4px;
 
   &::after {
     content: '';
@@ -275,34 +276,6 @@
 
   &__progress {
     margin: 0 0 30px 0;
-
-    & svg {
-      &__donut {
-        &__segment {
-          // animation: 2s ease-in-out;
-          // animation: circle 120000ms linear 0s infinite normal forwards running;
-          animation: segment 2s ease-in-out;
-          // animation: name duration timing-function delay iteration-count direction fill-mode;
-        }
-
-        @keyframes segment {
-          from {
-            transform: rotateY(0deg);
-          }
-
-          // stroke-dasharray: 0 100;
-
-          to {
-            transform: rotateY(360deg);
-            // stroke-dasharray: 90 10;
-          }
-        }
-
-
-
-
-      }
-    }
   }
 
   &__name {
@@ -391,5 +364,64 @@
       box-shadow: 0 3px 0 #118d78;
       background-color: #16aa8f;
     }
+  }
+}
+
+.reviews {
+
+  background-color: #d74680;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+
+  &__heading {}
+
+  &__text {}
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0 30px 0;
+    margin: 70px 0 0 0;
+  }
+
+  &__item {
+    max-width: 450px;
+    margin: 0 50px 140px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 0 60px 0;
+  }
+
+  &__avatar {}
+
+  &__item-review {
+    margin: 0 0 0 20px;
+  }
+
+  &__item-text {
+    font-family: "Titillium Web", sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  &__person {
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__name {
+    font-family: "Titillium Web", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+
+  &__position {
+    color: #ffdd99;
+    font-size: 20px;
   }
 }

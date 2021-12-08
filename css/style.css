@@ -125,6 +125,7 @@ h6 {
   text-align: center;
   position: relative;
   padding: 60px 0 30px 0;
+  letter-spacing: 4px;
 }
 
 .heading::after {
@@ -399,33 +400,6 @@ h6 {
   margin: 0 0 30px 0;
 }
 
-.skills__progress svg__donut__segment {
-  -webkit-animation: segment 2s ease-in-out;
-          animation: segment 2s ease-in-out;
-}
-
-@-webkit-keyframes segment {
-  from {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
-@keyframes segment {
-  from {
-    -webkit-transform: rotateY(0deg);
-            transform: rotateY(0deg);
-  }
-  to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
-  }
-}
-
 .skills__name {
   text-transform: uppercase;
   font-size: 20px;
@@ -526,4 +500,65 @@ h6 {
   -webkit-box-shadow: 0 3px 0 #118d78;
           box-shadow: 0 3px 0 #118d78;
   background-color: #16aa8f;
+}
+
+.reviews {
+  background-color: #d74680;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.reviews__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 0 30px 0;
+  margin: 70px 0 0 0;
+}
+
+.reviews__item {
+  max-width: 450px;
+  margin: 0 50px 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 0 0 60px 0;
+}
+
+.reviews__item-review {
+  margin: 0 0 0 20px;
+}
+
+.reviews__item-text {
+  font-family: "Titillium Web", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.reviews__person {
+  position: absolute;
+  bottom: 0;
+}
+
+.reviews__name {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+
+.reviews__position {
+  color: #ffdd99;
+  font-size: 20px;
 }
